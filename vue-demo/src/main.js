@@ -6,10 +6,10 @@ import router from './router'
 //引入ElementUI
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import  service from './service'
+import service from './service'
 import echarts from 'echarts'   //引入echarts
-//使用ElementUI
-Vue.use(ElementUI);
+
+Vue.use(ElementUI);//使用ElementUI
 Vue.config.productionTip = false;
 Vue.prototype.service = service;  //axios挂载到原型
 Vue.prototype.$echarts = echarts;   //echarts挂载到原型

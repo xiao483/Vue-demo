@@ -45,18 +45,18 @@
             this.service.post('/login', this.form)
               .then( (res) => {
                 console.log(res);
-                if (res.data.status === '200'){
-                  this.$message({
-                    message: '登录成功',
-                    type: 'success',
-                    duration: 1000
-                  });
+                // if (res.data.status === '200'){
+                //   this.$message({
+                //     message: '登录成功',
+                //     type: 'success',
+                //     duration: 1000
+                //   });
                   this.$router.push('/home/student')
                   localStorage.setItem('token', res.data.data.token)
                   localStorage.setItem('username',res.data.data.username)
-                }else {
-                  console.log(res.data.msg)
-                }
+                // }else {
+                //   console.log(res.data.msg)
+                // }
               })
               .catch(function (err) {
                 console.log(err);

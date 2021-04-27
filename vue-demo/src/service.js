@@ -3,7 +3,7 @@ import axios from 'axios'
 const service = axios.create({
   //baseURL会自动加载接口的地址上
   // baseURL: 'http://rap2.taobao.org:38080/app/mock/264406',
-  baseURL: 'http://rap2.taobao.org:38080/app/mock/265039/',
+  baseURL: 'http://rap2api.taobao.org/app/mock/265039',
   //指定请求超时的毫秒数，请求花费的时间超过timeout设定的时间，请求将会被中断
   timeout: 1000,
   // `withCredentials` 表示跨域请求时是否需要使用凭证

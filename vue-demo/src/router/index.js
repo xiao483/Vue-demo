@@ -12,11 +12,11 @@ Vue.use(Router);
 
 export default new Router({
   routes: [
-    {
-      path: '/',
-      redirect:'./login',
-      hidden: true
-    },
+    // {
+    //   path: '/',
+    //   redirect:'./login',
+    //   hidden: true
+    // },
     {
       path: '/home',
       name: '学生管理',
